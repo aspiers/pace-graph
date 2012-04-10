@@ -188,19 +188,20 @@ function updateLegend() {
         // snap to data series
         if (Math.abs(y - pos.y) > 0.2)
             y = pos.y;
-
-        var x = pos.x;
-        var miles_per_hr = y / KM_PER_MILE;
-        var time = x * 60 / y;
-
-        $('#time .dataValue'        ).html(to_mins_secs(time));
-        $('#km.dataValue'           ).html(x.toFixed(2));
-        $('#miles.dataValue'        ).html((x / KM_PER_MILE).toFixed(2));
-        $('#km_per_hr.dataValue'    ).html(y.toFixed(2));
-        $('#miles_per_hr.dataValue' ).html(miles_per_hr.toFixed(2));
-        $('#mins_per_km.dataValue'  ).html(to_mins_secs(60.0 / y));
-        $('#mins_per_mile.dataValue').html(to_mins_secs(60.0 / miles_per_hr));
     }
+
+    var x = pos.x;
+    //var y = pos.y;
+    var miles_per_hr = y / KM_PER_MILE;
+    var time = x * 60 / y;
+
+    $('#time .dataValue'        ).html(to_mins_secs(time));
+    $('#km.dataValue'           ).html(x.toFixed(2));
+    $('#miles.dataValue'        ).html((x / KM_PER_MILE).toFixed(2));
+    $('#km_per_hr.dataValue'    ).html(y.toFixed(2));
+    $('#miles_per_hr.dataValue' ).html(miles_per_hr.toFixed(2));
+    $('#mins_per_km.dataValue'  ).html(to_mins_secs(60.0 / y));
+    $('#mins_per_mile.dataValue').html(to_mins_secs(60.0 / miles_per_hr));
 }
 
 var predictions, plot, last_y, shiftPressed;
