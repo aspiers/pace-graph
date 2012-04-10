@@ -12,17 +12,11 @@ function to_mins_secs(mins) {
     mins %= 60;
     var whole_mins = Math.floor(mins);
     var secs = (mins - whole_mins) * 60;
-    var str = '';
-    if (hours > 1)
-        str = sprintf('%dhours', hours);
-    else if (hours == 1)
-        str = '1 hour';
-    if (str != '')
-        str += ' ';
-    str += String(whole_mins) + "'";
-    if (secs > 0)
-        str += sprintf("%02d\"", secs);
-    return str;
+
+    if (hours > 0)
+        return sprintf("%d:%02d'%02d\"", hours, whole_mins, secs);
+
+    return sprintf("%d'%02d\"", whole_mins, secs);
 }
 
 function pace_tick_generator(slowest, fastest, step1, step2, threshold) {
