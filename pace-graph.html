@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+  <title>Running pace chart</title>
+  <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+  <script language="javascript" type="text/javascript" src="sprintf.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.flot.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.flot.crosshair.js"></script>
+  <script language="javascript" type="text/javascript" src="flot-axislabels/jquery.flot.axislabels.js"></script>
+  <script language="javascript" type="text/javascript" src="pace-graph.js"></script>
+  <link rel="stylesheet" type="text/css" href="pace-graph.css" />
+</head>
+
+<body>
+
+<h1>Running pace chart</h1>
+
+<div id="chartdiv"></div>
+
+<div class="data">
+    <table>
+        <tr id="time">
+            <td class="unit">Time:
+            <td class="dataValue">00'00"
+        <tr id="distance">
+            <td class="unit">Distance:
+            <td class="dataValue">
+                <span id="km"           class="dataValue">99.99</span> km /
+                <span id="miles"        class="dataValue">99.99</span> miles
+        <tr id="speed">
+            <td class="unit">Speed:
+            <td class="dataValue">
+                <span id="km_per_hr"    class="dataValue">99.99</span> km/hr /
+                <span id="miles_per_hr" class="dataValue">99.99</span> miles/hr
+        <tr id="pace">
+            <td class="unit">Pace:
+            <td class="dataValue">
+                <span id="mins_per_km"    class="dataValue">00'00"</span> mins/km /
+                <span id="mins_per_mile" class="dataValue">00'00"</span> mins/mile
+    </table>
+</div>
+
+</body>
+
+</html>

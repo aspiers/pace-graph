@@ -1,0 +1,21 @@
+#chartdiv {
+    height:600px;
+    width:900px;
+}
+
+.data {
+    position: absolute;
+    top: 130px;
+    right: 13px;
+    background-color: white;
+    opacity: 0.85;
+}
+
+td.unit {
+    font-weight: bold;
+}
+
+table#foo {
+    font-size: smaller;
+    color: #545454;
+}
