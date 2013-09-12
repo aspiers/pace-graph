@@ -18,6 +18,15 @@
 
 <h1>Running pace conversion and prediction graph</h1>
 
+<p> Click anywhere on the graph corresponding to a past performance,
+then move the mouse to another point on the curve in order to obtain a
+prediction curve for future performances at that distance.
+
+<p> Currently only the <a
+href="http://www.runnersworld.com/training/timecalc.html">Pete Riegel
+prediction model</a> is implemented, but I hope to support <a
+href="http://run-down.com/statistics/calcs_explained.php">other models</a> soon.
+
 <div id="chartdiv"></div>
 
 <div class="data">
@@ -42,6 +51,19 @@
                 <span id="mins_per_mile" class="dataValue">00'00"</span> per mile
     </table>
 </div>
+
+<br clear="left" />
+
+<h2>TODO</h2>
+
+This tool still needs some work:
+
+<ul>
+    <li> Support multiple <a href="http://run-down.com/statistics/calcs_explained.php">prediction models</a>.</li>
+    <li> Making snapping of mouse cursor to relevant coordinates more intelligent. </li>
+    <li> Add a hard-coded curve for world records. </li>
+    <li> Support multiple simultaneous prediction curves? </li>
+</ul>
 
 </body>
 
