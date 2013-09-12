@@ -1,12 +1,11 @@
 #chartdiv {
     height: 600px;
     width:  900px;
+    float: left;
 }
 
 .data {
-    position: absolute;
-    top: 130px;
-    right: 13px;
+    float: left;
     background-color: white;
     opacity: 0.85;
 }
